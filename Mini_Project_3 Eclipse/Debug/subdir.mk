@@ -4,31 +4,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../adc.c \
-../gpio.c \
-../lcd.c \
-../lm35_sensor.c \
-../main.c \
-../motor.c \
-../pwm.c 
+../main.c 
 
 OBJS += \
-./adc.o \
-./gpio.o \
-./lcd.o \
-./lm35_sensor.o \
-./main.o \
-./motor.o \
-./pwm.o 
+./main.o 
 
 C_DEPS += \
-./adc.d \
-./gpio.d \
-./lcd.d \
-./lm35_sensor.d \
-./main.d \
-./motor.d \
-./pwm.d 
+./main.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

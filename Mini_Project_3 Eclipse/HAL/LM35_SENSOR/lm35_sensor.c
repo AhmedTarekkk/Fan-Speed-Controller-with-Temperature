@@ -9,7 +9,7 @@
 *******************************************************************************/
 
 #include "lm35_sensor.h"
-#include "adc.h"
+#include "../../MCAL/ADC/adc.h"
 
 
 uint8 LM35_getTemperature(void)

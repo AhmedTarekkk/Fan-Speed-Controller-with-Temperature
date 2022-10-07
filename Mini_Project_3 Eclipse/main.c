@@ -4,10 +4,10 @@
 *  Author:			Ahmed Tarek
 *******************************************************************************/
 
-#include "adc.h"
-#include "lcd.h"
-#include "motor.h"
-#include "lm35_sensor.h"
+#include "MCAL/ADC/adc.h"
+#include "HAL/LCD/lcd.h"
+#include "HAL/MOTOR/motor.h"
+#include "HAL/LM35_SENSOR/lm35_sensor.h"
 
 /* Structure to dynamic configure the ADC module */
 ADC_ConfigType ADC_Configration = {ADC_INTERNAL_VREF,ADC_F_CPU_8};
@@ -22,7 +22,7 @@ uint8 g_tempValue ;
 * Parameters (out):   	None
 * Return value:      	void
 ********************************************************************************/
-void displayTemp()
+void APP_displayTemp()
 {
 	if(g_tempValue >= 100)
 	{
@@ -55,7 +55,7 @@ int main(void)
 	while(1)
 	{
 		g_tempValue = LM35_getTemperature();
-		displayTemp();
+		APP_displayTemp();
 
 		if(g_tempValue >= 120)
 		{

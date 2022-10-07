@@ -10,7 +10,7 @@
 
 #include "pwm.h"
 #include "avr/io.h"
-#include "gpio.h"
+#include "../GPIO/gpio.h"
 
 void PWM_Timer0_Start(uint8 duty_cycle)
 {

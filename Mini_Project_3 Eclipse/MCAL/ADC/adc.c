@@ -10,7 +10,7 @@
 
 #include "adc.h"
 #include "avr/io.h"
-#include "common_macros.h"
+#include "../../LIB/common_macros.h"
 
 void ADC_init(const ADC_ConfigType * Config_Ptr)
 {

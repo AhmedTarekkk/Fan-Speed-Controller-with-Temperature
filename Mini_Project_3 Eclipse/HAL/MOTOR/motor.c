@@ -9,9 +9,9 @@
 *******************************************************************************/
 
 #include "motor.h"
-#include "gpio.h"
-#include "common_macros.h"
-#include "pwm.h"
+#include "../../MCAL/GPIO/gpio.h"
+#include "../../LIB/common_macros.h"
+#include "../../MCAL/PWM0/pwm.h"
 
 
 void DcMotor_Init(void)

@@ -9,8 +9,8 @@
 *******************************************************************************/
 
 #include "lcd.h"
-#include "common_macros.h"
-#include "gpio.h"
+#include "../../LIB/common_macros.h"
+#include "../../MCAL/GPIO/gpio.h"
 #include "util/delay.h"
 
 void LCD_init(void)
